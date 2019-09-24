@@ -1,4 +1,4 @@
-import { Icliente } from "../clientes/icliente";
+import { Icliente } from "../../interfaces/icliente";
 
 export const CLIENTES: Icliente[] = [
     {id: '79514933', nombres: 'malcom arturo', apellidos: 'conzales lizarazo', direccion:'carrara 13 calle 45 67', municipio: 'Barbosa', telefono:'12345678', fechaCreacion: '1/13/1969'},
@@ -10,8 +10,10 @@ export const CLIENTES: Icliente[] = [
     {id: '3245678', nombres: 'antonia freijoa', apellidos: 'conzales lizarazo', direccion:'carrara 13 calle 45 67', municipio: 'Barbosa', telefono:'12345678', fechaCreacion: '1/13/1969'},
     {id: '123457951493', nombres: 'curuba madura', apellidos: 'perez perez', direccion:'carrara 13 calle 45 67', municipio: 'Barbosa', telefono:'12345678', fechaCreacion: '1/13/1969'},
     {id: '12347951493378', nombres: 'rosa monica', apellidos: 'cordova anzoategui', direccion:'carrara 13 calle 45 67', municipio: 'Barbosa', telefono:'12345678', fechaCreacion: '13/04/1969'},
-    {id: '98765', nombres: 'jeison stiven', apellidos: 'bolivar santander', direccion:'carrara 13 calle 45 67', municipio: 'Barbosa', telefono:'12345678', fechaCreacion: '1/13/1969'},
-    
+    {id: '98765', nombres: 'jeison stiven', apellidos: 'bolivar santander', direccion:'carrara 13 calle 45 67', municipio: 'Barbosa', telefono:'12345678', fechaCreacion: '1/13/1969'},   
+    {id: '98765899', nombres: 'belisario betancur', apellidos: 'bolivar santander', direccion:'carrara 13 calle 45 67', municipio: 'Barbosa', telefono:'12345678', fechaCreacion: '1/13/1969'},   
 
 
 ]
+
+
