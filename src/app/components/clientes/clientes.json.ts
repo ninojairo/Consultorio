@@ -1,6 +1,8 @@
 import { Icliente } from "../../interfaces/icliente";
+import { Cliente } from "../../clases/cliente";
 
-export const CLIENTES: Icliente[] = [
+
+export const CLIENTES: Cliente[] = [
     {id: '79514933', nombres: 'malcom arturo', apellidos: 'conzales lizarazo', direccion:'carrara 13 calle 45 67', municipio: 'Barbosa', telefono:'12345678', fechaCreacion: '1/13/1969'},
     {id: '32468770', nombres: 'maria concepcion', apellidos: 'pibe valderrama', direccion:'carrara 13 calle 45 67', municipio: 'Barbosa', telefono:'12345678', fechaCreacion: '11/13/1969'},
     {id: '8906523120', nombres: 'claudia liliana', apellidos: 'fredy rincon', direccion:'carrara 13 calle 45 67', municipio: 'Barbosa', telefono:'12345678', fechaCreacion: '21/13/1969'},

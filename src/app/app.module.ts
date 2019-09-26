@@ -14,6 +14,7 @@ import { ConsultasComponent } from './components/consultas/consultas.component';
 //Services
 import { ClientesService } from "../app/services/clientes.service";
 import { ClienteComponent } from './components/cliente/cliente.component';
+import { ErrorComponent } from './components/error/error.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ClienteComponent } from './components/cliente/cliente.component';
     ClientesComponent,
     NavbarComponent,
     ConsultasComponent,
-    ClienteComponent
+    ClienteComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,

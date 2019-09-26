@@ -11,6 +11,13 @@ export class ClienteComponent implements OnInit {
 
   idCliente : string;
   formulario : FormGroup;
+  /*Accion deseada
+  1 = adicionar cliente
+  2 = actualizar cliente
+  */
+
+  flagAccionCliente : number;
+
 
   constructor( private _activatedRoute: ActivatedRoute) { }
 
@@ -27,13 +34,28 @@ export class ClienteComponent implements OnInit {
       'email' : new FormControl(),
       'sexo' : new FormControl('',[Validators.required, Validators.minLength(1)]),
       'edad' : new FormControl('',[Validators.required, Validators.minLength(1)]),
-      
       'caracteristicas' : new FormControl(),
-      
-      
+     
+    })
+
+    console.log('accion');
+    console.log(this.idCliente);
+    
+
+    if (this.idCliente == null){
+      //Adicionar Cliente
+      console.log('Adicionar Cliente');
+      this.flagAccionCliente = 1;
+    }
+    else{
+      //Actualizar Cliente
+      console.log('Actualizar Cliente');
+      this.flagAccionCliente = 2;
+
       
 
-    })
+
+    }
 
     
   }

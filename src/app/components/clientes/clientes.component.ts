@@ -12,6 +12,7 @@ import { Router } from "@angular/router";
 export class ClientesComponent implements OnInit {
 
   clientes : Icliente[];
+  flagClienteNuevo : boolean = false;
 
   constructor( private _clientesService: ClientesService, private _router: Router) { }
 
@@ -25,6 +26,13 @@ export class ClientesComponent implements OnInit {
     console.log(idCliente);
     this._router.navigate(['cliente',idCliente]);
 
+  }
+
+  adicionarCliente(){
+    console.log('adicionar cliente');
+    this.flagClienteNuevo = true;
+
+    this._router.navigate(['cliente']);
   }
 
 }

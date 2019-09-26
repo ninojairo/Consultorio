@@ -2,6 +2,10 @@
   <div class="card border-info mb-3">
     <div class="card-body text-info">
       <h5 class="card-title">Clientes</h5>
+      <div>
+        <button type="button" class="btn btn-info" (click)="adicionarCliente()">Adicionar cliente</button>
+      </div>
+      <br>
 
       <table class="table table-striped animated fadeIn">
         <thead>
@@ -15,7 +19,7 @@
             <th scope="col">Telefono</th>
             <th scope="col">Consultar</th>
             <th scope="col">Actualizar</th>
-            
+
 
           </tr>
         </thead>
@@ -32,9 +36,9 @@
               <button type="button" class="btn btn-info" (click)="consultarCliente(cliente.id)">Consultar</button>
             </td>
             <td>
-                <button type="button" class="btn btn-info" (click)="consultarCliente(cliente.id)">Actualizar</button>
-              </td>
-  
+              <button type="button" class="btn btn-info" (click)="consultarCliente(cliente.id)">Actualizar</button>
+            </td>
+
 
 
           </tr>
